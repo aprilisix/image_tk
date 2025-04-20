@@ -5,12 +5,10 @@ Created on Sun Apr 20 13:52:09 2025
 @author: LAB
 """
 import streamlit as st
-import tensorflow as tf
-from tensorflow.applications.mobilenet_v2 import decode_predictions, preprocess_input
-from tensorflow.preprocessing import image
+from tensorflow.keras.applications.mobilenet_v2 import decode_predictions, preprocess_input
+from tensorflow.keras.preprocessing import image
 import numpy as np
 from PIL import Image
-import io
 import pickle
 
 with open ('model.pkl', 'rb') as f:
